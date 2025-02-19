@@ -46,7 +46,16 @@ if(Number(escolha) == 1){
         console.log("\n");
     }
 }else if(Number(escolha) == 2){
-    for(){
-        
+    for(let inflacoes of inflacao){
+        let ano = inflacoes.ano;
+        let ipca = inflacoes.ipca;
+
+        console.log(`Ano:  ${ano}`);
+        console.log(`IPCA: ${ipca}%`);
+        console.log("\n")
     }
+}else if(Number(escolha == 3)){
+   
+}else {
+    console.log("Opção inválida");
 }

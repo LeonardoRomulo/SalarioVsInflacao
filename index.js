@@ -55,7 +55,33 @@ if(Number(escolha) == 1){
         console.log("\n")
     }
 }else if(Number(escolha == 3)){
-   
+
+    console.log("\n");
+    console.log("SALÁRIOS DE 2010 A 2020");
+    console.log("\n");
+
+    for(let salarios of salarioMinimo){
+
+        let salario = salarios.salario;
+        let ano = salarios.ano;
+
+        console.log(`Ano: ${ano}`);
+        console.log(`Salário: ${salario},00`);
+        console.log("\n");
+}
+
+console.log("IPCA DE 2010 A 2020");
+console.log("\n");
+
+for(let inflacoes of inflacao){
+    let ano = inflacoes.ano;
+    let ipca = inflacoes.ipca;
+
+    console.log(`Ano:  ${ano}`);
+    console.log(`IPCA: ${ipca}%`);
+    console.log("\n")
+}
+
 }else {
     console.log("Opção inválida");
 }
